@@ -1,0 +1,113 @@
+<!--
+File Name: projects.html
+Author: Jordan Cooper
+Web	Site: projects.html, the my projects page
+Description: This is the Projects section of the website. In this section I provide a more in
+depth description of my projects that can be viewed on the home page. each picture provides
+a link to Github, or to the application itself. 
+
+--> 
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jordan Cooper | My Projects</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Della+Respira">
+    <style>
+      body {
+        font-family: 'Della Respira', serif;
+      }
+    </style>
+<script src="js/modernizr.js"></script>
+</head>
+	<body>
+		<!-- Navigation Bar  NOTE: id="current-page" changes from page to page, highlights the current page-->
+		<div class="row">
+			<nav class="top-bar" data-topbar>
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href="home.html">Home</a></h1>
+					</li>
+					<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+				</ul>
+				<section class="top-bar-section">
+					<ul class="left">
+						<li><a href="about.html">About Me </a></li>
+						<li><a href="projects.html" id="current-page">Projects</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="https://github.com/Zulrak">GitHub</a></li>
+						<li><a href="contacts.html">Contacts Me</a></li>
+						<li><a href="contact_info.php">Business Contacts</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+		<!-- Title for the page -->
+		<div class="row">
+			<div class="large-12 columns center-title">
+				<h1>My Projects</h1>
+		</div>
+		
+		<!-- The next for rows are split in 2, one half containing the title and description the other half 
+		containing the image and a link to the source -->
+		<div class="row">
+			<div class="large-6 columns left-title">
+					<h4 id="flash-project">Flash Banner Add</h4>
+					<p>This project was created using Adobe flash CS6. It is a simple banner add that conforms
+					to Google's advertisement standards for a YouTube advertisement. The advertisement was created
+					to entice viewers into joining Georgian College's mechanical engineering technology - automotive manufacturing
+					course.</p>
+			</div>
+		<div class="large-6 columns">
+				<a href="project_files/Assignment_1_Jordan_Cooper_Banner_Add.swf"><img src="img/flash-project.jpg"></a> 
+		</div>
+		</div>
+		
+		<div class="row">
+			<div class="large-6 columns left-title">
+					<h4 id="pygame-project">Zombie Survival</h4>
+					<p> Zombie Survival is the second installment of the Zombie series, the first being Brain Buster. In this game
+					our 'hero' Doug the zombie must yet again collect brains, this time for his zombie friends. But his classic enemy
+					the angry villagers have returned to stop him!
+					Zombie Survival was created with Aptana Studio, coded with python and Pygame and is a side scroller for all ages.</p>
+			</div>
+		<div class="large-6 columns">
+				<a href="https://github.com/Zulrak/Zombie_Survival"><img src="img/pygame-project.jpg"></a> 
+		</div>
+		</div>
+		
+		<div class="row">
+			<div class="large-6 columns left-title">
+					<h4 id="web-project">Shaw Website Application</h4>
+					<p> During my co-op at Dr.Logicks Internet Cafe there were days where I had nothing to do but sit back and watch
+					the computers download their updates. So I decided to spend my free time building an application to help make the
+					tiresome task of manually collecting data easier. This website allowed my manager to input information about the client
+					into a local database where she could then extract the formatted data into an Excel sheet and email it to the partner company
+					to receive the rebate. The program was created using ASP.NET and an sql database, I chose this because after I left the co-op position my boss
+					could edit and manage the site with her background in web design.</p>
+			</div>
+		<div class="large-6 columns">
+				<a href="https://github.com/Zulrak/Zombie_Survival"><img src="img/web-project.jpg"></a> 
+		</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<p> © 2014 Jordan Cooper</p>
+		</footer>
+		<script src="js/jquery.js"></script> 
+		<script src="js/foundation.min.js"></script> 
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.topbar.js"></script> 
+		<script src="js/foundation/foundation.orbit.js"></script> 
+
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>
