@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jordan Cooper | Welcome</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Della+Respira">
+<style>
+body {
+	font-family: 'Della Respira', serif;
+}
+</style>
+<script src="js/modernizr.js"></script>
+<script type ="text/javascript">
+if (screen.width < 800)
+{
+	window.location="http://webdesign4.georgianc.on.ca/~200199215/Mobile_Portfolio/index.html"
+}
+</script>
+</head>
+<body>
+
+<!-- Navigation Bar  NOTE: id="current-page" changes from page to page, highlights the current page--> 
+<!-- as the view port shrinks so does the navagation bar, to compensate for this all items are placed in 
+		a drop down menu (except for the home page) when the viewport becomes too small to hold all the text -->
+<div class="row">
+	<nav class="top-bar" data-topbar>
+		<ul class="title-area">
+			<li class="name">
+				<h1 id="current-page"><a href="home.html">Home</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+		</ul>
+		<section class="top-bar-section">
+			<ul class="left">
+				<li><a href="about.html">About Me</li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="https://github.com/Zulrak">GitHub</a></li>
+				<li><a href="contacts.html">Contacts Me</a></li>
+			</ul>
+		</section>
+	</nav>
+</div>
+<form id="login" name="login" method="post" action="login.php">
+	<table width="510" border="0" align="center">
+		<tr>
+			<td colspan="2">Login to my Portfolio</td>
+		</tr>
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" name="username" id="username" /></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="password" id="password" /></td>
+		</tr>
+		<tr>
+			<td>Submit</td>
+			<td><input type="submit" name="button" id="button" value="Submit" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

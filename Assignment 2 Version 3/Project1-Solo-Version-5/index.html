@@ -1,0 +1,370 @@
+<!--
+File Name: index.html
+Author Name: Jordan Cooper
+Website Name: index.HTML
+Description: This is the content for the website
+in this section all of the pages are within one file.
+created using 
+html5, jquery mobile, styled with CSS
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jordan Cooper's Digital Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+<link rel="stylesheet" href="css/themes/portfolio.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Della+Respira">
+    <style>
+      body {
+        font-family: 'Della Respira', serif;
+      }
+    </style>
+<link rel="stylesheet" href="css/styles.css" />
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script src="js/slider.js"></script>
+</head>
+
+<body>
+
+<!-- Page 1 "Home" page  -->
+<div data-role="page" id="home"> 
+	
+	<!-- Header -->
+	<div data-role="header">
+		<div id="logo" align="center"> <img src="Images/logo.png"/> </div>
+		<h1>Jordan Cooper</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info">About Me</a></li>
+			<li><a href="#contact" data-icon="star">Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	
+	<!-- Content -->
+	<section role="main" class="ui-content"> 
+	
+	<div class='wrapper'>
+		<div id='slider'>
+		
+		<a href="#project"><img id="1" src="Images/flash-project.jpg"></a>
+		<a href="#project"><img id="2" src="Images/pygame-project.jpg"></a>
+		<a href="#project"><img id="3" src="Images/web-project.jpg"></a>
+		
+		</div>
+		
+		<a href='#' class='right ui-btn ui-icon-arrow-r ui-btn-icon-notext ui-corner-all' c   id='arrows' onClick="next(); return false;"></a>
+		<a href='#' class='left ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all' id='arrows' onClick="previous();"></a>
+	</div>
+	
+
+	
+	
+	
+	<div class="centerText"> 
+	<div><p> As a soon to be Computer Programmer Analyst I have many talents at my disposal to work in a variety of different environments.
+				    I believe that whether we like it or not, technology is the future. For the most part technology makes our lives easier and it
+				    is because of this that I chose to work in the IT field. Whether it’s upgrading and updating out of date programs, building games,
+					making advertisements, to making web pages or managing databases I intend to use my skills as a programmer to make the lives of my
+				    users better. </p></div>
+	
+	<a href="#project" class="ui-btn ui-btn-inline">Projects</a> 
+	<a href="#services" class="ui-btn ui-btn-inline">Services</a></div>
+	</section>
+	<div class="centerText"> <a href="http://webdesign4.georgianc.on.ca/~200199215/Portfolio/home.html" class="ui-btn ui-btn-inline">Switch to Desktop Mode</a> </div>
+	
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+
+<!-- Page 2 "About Me" page  -->
+<div data-role="page" id="aboutMe"> 
+	
+	<!-- Header -->
+	<div data-role="header"> <a href="#"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all" data-rel=back ></a>
+		<h1>About Me</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#home"    data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info" class="ui-btn-active ui-state-persist">About Me</a></li>
+			<li><a href="#contact" data-icon="star">Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	
+	<!-- Content --> 
+	<!-- My Profile Picture -->
+	<div class="centerText">
+		<div> <img src="Images/profile.jpg"> </div>
+	</div>
+	<section role="main" class="ui-content"> 
+		<!-- Tagline -->
+		<div>
+			<p>I am a computer Programmer Analyst student enrolled in the 3 year program at Georgian College. Currently I am in my 3rd year in the course 
+				and looking forward to graduating in 16 months after 2 semesters of classes and completing 2 more co-op placements</p>
+		</div>
+		
+		<!-- Resume Below this is a section created of unordered lists describing my traits and skills. --> 
+		
+		<!-- Web Programming -->
+		<div>
+			<h4> Web Programming</h4>
+		</div>
+		<div>
+			<ul>
+				<li>Created multiple web pages using many different programming languages such as ASP.Net, HTML5, CSS3, PHP and Java Script</li>
+				<li>Added functionality to web pages using C#, Php and SQL (Such as user creation and authentication, and CRUD operations on a database)</li>
+				<li>Experience with Microsoft Visual Studio, Dreamweaver, Eclipse and Windows Azure</li>
+				<li>Experiance creating responsive web pages using <a href="http://foundation.zurb.com/">Foundation </a></li>
+			</ul>
+		</div>
+		
+		<!-- Graphics and Game Programming -->
+		<div>
+			<h4>Graphics and Game Programming</h4>
+		</div>
+		<div>
+			<ul>
+				<li>Created graphics in programs such as adobe Photoshop, GIMP 2, and Paint.Net</li>
+				<li>Experienced with Adobe Flash CS6, Aptana and Eclipse</li>
+				<li>Used Graphics programming in a variety of applications (such as games, animations, and graphical information systems)</li>
+				<li>Familiar with Java/Android, Python and Pygame </li>
+				<li>Experiance creating Flash banner adds and animations with Adobe Flash </li>
+			</ul>
+		</div>
+		
+		<!-- Mainframe And COBOL programming -->
+		<div>
+			<h4>Mainframe and COBOL Programming</h4>
+		</div>
+		<div>
+			<ul>
+				<li>Can create and debug COBOL programs on the PC.</li>
+				<li>Deploy programs to the Mainframe</li>
+				<li>Write moderately complex COBOL programs to process sequential and indexed files</li>
+				<li>Modify existing COBOL programs to enhance their functionality and/or to correct errors in program logic</li>
+			</ul>
+		</div>
+		
+		<!-- Database Management -->
+		<div>
+			<h4>Database Management</h4>
+		</div>
+		<div>
+			<ul>
+				<li>Implementation of minor database security</li>
+				<li>Database server management </li>
+				<li>Creation of databases to be used within other applications</li>
+				<li>Experienced with DB2, MYSQL, and Microsoft SQL manager</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+<!-- End of Page 2 --> 
+
+<!-- Page 3 "Contact Me" page  -->
+<div data-role="page" id="contact"> 
+	
+	<!-- Header -->
+	<div data-role="header"> <a href="#"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all" data-rel=back ></a>
+		<h1>Contact Me</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#home"    data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info">About Me</a></li>
+			<li><a href="#contact" data-icon="star" class="ui-btn-active ui-state-persist" >Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	
+	<!-- Content -->
+	<section role="main" class="ui-content"> 
+		<!-- thanks from the writer -->
+		<div>
+			<p> If you wish to contact me there are many different ways of doing so. 
+				I look forward to hearing from you about any questions you may have and thank you for visiting my site today.</p>
+		</div>
+		
+		<!-- Emails will be made when you click one of the buttons -->
+		<div class="centerText">
+			<h4>Emails</h4>
+			<a href="mailto:J.coop2@yahoo.ca" data-role="button" rel="external" >J.coop2@yahoo.ca</a> <a href="mailto:200199215@student.georgianc.on.ca" data-role="button" rel="external" >200199215@student.georgianc.on.ca</a> </div>
+		
+		<!-- Calls will be made when you click one of the call buttons -->
+		<div class="centerText">
+			<h4>Telephone</h4>
+			<a href="tel:7057333389" data-role="button" rel="external" >Home: (705) 733-3389</a> <a href="tel:7052793389" data-role="button" rel="external" >Mobile: (705) 279-3389</a>
+			<p></p>
+		</div>
+		<div class="centerText">
+			<h4>Keep Connected</h4>
+			<a href="http://ca.linkedin.com/pub/jordan-cooper/7a/847/491"> <img src="Images/linkedin.png" border="0"> </a> </div>
+	</section>
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+<!-- End of Page 3 --> 
+
+<!-- Page 4 "Projects" page  -->
+<div data-role="page" id="project"> 
+	
+	<!-- Header -->
+	<div data-role="header"> <a href="#"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all" data-rel=back ></a>
+		<h1>Projects</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">		<ul>
+			<li><a href="#home"    data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info">About Me</a></li>
+			<li><a href="#contact" data-icon="star">Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	<!-- Content -->
+	<section role="main" class="ui-content centerText">
+		<div id='flash-project'>
+			<h4 >Flash Banner Ad</h4>
+			<a href="project_files/Assignment_1_Jordan_Cooper_Banner_Add.swf"><img src="Images/flash-project.jpg"></a>
+			<p>This project was created using Adobe flash CS6. It is a simple banner add that conforms
+				to Google's advertisement standards for a YouTube advertisement. The advertisement was created
+				to entice viewers into joining Georgian College's mechanical engineering technology - automotive manufacturing
+				course.</p>
+		</div>
+		<div>
+			<h4 id='pygame-project'>Zombie Survival</h4>
+			<a href="https://github.com/Zulrak/Zombie_Survival"><img src="Images/pygame-project.jpg"></a>
+			<p> Zombie Survival is the second installment of the Zombie series, the first being Brain Buster. In this game
+				our 'hero' Doug the zombie must yet again collect brains, this time for his zombie friends. But his classic enemy
+				the angry villagers have returned to stop him!
+				Zombie Survival was created with Aptana Studio, coded with python and Pygame and is a side scroller for all ages.</p>
+		</div>
+		<div>
+			<h4 id='web-project'>Shaw Website Application</h4>
+			<a href="https://github.com/Zulrak/Zombie_Survival"><img src="Images/web-project.jpg"></a>
+			<p> During my co-op at Dr.Logicks Internet Cafe there were days where I had nothing to do but sit back and watch
+				the computers download their updates. So I decided to spend my free time building an application to help make the
+				tiresome task of manually collecting data easier. This website allowed my manager to input information about the client
+				into a local database where she could then extract the formatted data into an Excel sheet and email it to the partner company
+				to receive the rebate. The program was created using ASP.NET and an sql database, I chose this because after I left the co-op position my boss
+				could edit and manage the site with her background in web design.</p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+<!-- End of Page 4 --> 
+
+<!-- Page 5 "Services" page  -->
+<div data-role="page" id="services"> 
+	
+	<!-- Header -->
+	<div data-role="header"> <a href="#"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all" data-rel=back ></a>
+		<h1>Services</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">		<ul>
+			<li><a href="#home"    data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info">About Me</a></li>
+			<li><a href="#contact" data-icon="star">Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	<!-- Content -->
+	<section role="main" class="ui-content centerText">
+		<div>
+			<h4>Web Programming</h4>
+			<p>I have experience creating websites using Asp.Net, PHP, Html5, CSS3, JavaScript and Foundation.
+				With my knowledge of databases and SQL I am able to create a creative and functional website for most
+				Businesses looking to have a web presence. I am currently learning to implement e-commerce into websites which will allow me
+				to create a more complex and practical website</p>
+		</div>
+		<div>
+			<h4>Advertising [Flash Banner Advertisements]</h4>
+			<p> Although my experience in Adobe Flash is minimal, I have found it to be an experience like no other. With just a few simple clicks
+				I am able to create advertisements that are ready for a real world environment. I find myself learning the application quite quickly 
+				and my capacity for knowledge appears to have no end and with the right amount of time I feel I could create an advertisement worth paying
+				for.</p>
+		</div>
+		<div>
+			<h4>Game Programming</h4>
+			<p>My experience creating games is currently limited to python and Pygame but as my skills increase with Flash I will be able to create 
+				games with that as well. In python I am able to create side scrollers and text based games, which can be seen in the Projects section of 
+				this site. I am quite interested in game development and I am looking into other development platforms like Blender.</p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+<!-- End of Page 4 -->
+
+<!-- Page 6 "Log In" page  -->
+<div data-role="page" id="login"> 
+	
+	<!-- Header -->
+	<div data-role="header"> <a href="#"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all" data-rel=back ></a>
+		<h1>Log In</h1>
+	</div>
+	<!-- Navigation -->
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#home"    data-icon="home">Home</a></li>
+			<li><a href="#aboutMe" data-icon="info">About Me</a></li>
+			<li><a href="#contact" data-icon="star">Contact</a></li>
+			<li><a href="#login" data-icon="star">My Contacts</a></li>
+		</ul>
+	</div>
+	<!-- Content -->
+	<section role="main" class="ui-content centerText">
+		<form id="login" name="login" method="post" action="login.php">
+			<table align="center">
+				<tr>
+					<td colspan="2">Login to my Portfolio</td>
+				</tr>
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" name="username" id="username" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" id="password" /></td>
+				</tr>
+				<tr>
+					<td>Submit</td>
+					<td><input type="submit" name="button" id="button" value="Submit" /></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<!-- Footer -->
+	<div data-role="footer" data-position="fixed" id="footer">
+		<h4> Copyright Jordan Cooper 2014</h4>
+	</div>
+</div>
+<!-- End of Page 6 -->
+
+
+</body>
+</html>

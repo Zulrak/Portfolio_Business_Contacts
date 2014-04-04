@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document 
+
+File Name: styles.css
+Author Name: Jordan Cooper
+Website Name: project1.HTML
+Description: This is the styling for the website, this
+css is linked to the website and will be used to enhance
+the visual aspect of the website.
+
+*/
+
+
+.centerText
+{
+text-align:center;
+}
+
+
+.wrapper
+{
+ width:200px;
+ margin: 0 auto;
+ height:250px;	
+}
+
+#slider
+{
+ width:200px;
+ height:169px;
+ overflow:hidden;
+ margin: 30px auto;
+}
+
+#slider > a > img
+{
+width:200px;
+height:169px;
+float:left;
+display:none;
+}
+
+#arrows
+{
+	padding: 5px 10px;
+	margin-top: 5px;
+}
+
+.left{float:left;}
+.right{float:right;}
+
+#logout
+{
+	text-align:right;
+}
+#contactTable
+{
+	margin-right:auto;
+	margin-left:auto;
+}

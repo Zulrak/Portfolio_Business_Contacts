@@ -1,0 +1,111 @@
+<!--
+File Name: home.html
+Author: Jordan Cooper
+Web	Site: home.html, the home page
+Description: This is the home page of my portfolio website. In this page is a
+navigation bar directing the user to other areas of the site, a tag line about myself,
+a slider featuring my latest projects and a link to my other projects and social media devices (linkedin)
+--> 
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jordan Cooper | Welcome</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Della+Respira">
+    <style>
+      body {
+        font-family: 'Della Respira', serif;
+      }
+    </style>
+<script src="js/modernizr.js"></script>
+<script type ="text/javascript">
+if (screen.width < 800)
+{
+	window.location="http://webdesign4.georgianc.on.ca/~200199215/Mobile_Portfolio/index.html"
+}
+</script>
+</head>
+	<body>
+	
+		<!-- Navigation Bar  NOTE: id="current-page" changes from page to page, highlights the current page-->
+		<!-- as the view port shrinks so does the navagation bar, to compensate for this all items are placed in 
+		a drop down menu (except for the home page) when the viewport becomes too small to hold all the text -->
+		<div class="row">
+			<nav class="top-bar" data-topbar>
+				<ul class="title-area">
+					<li class="name">
+						<h1 id="current-page"><a href="home.html">Home</a></h1>
+					</li>
+					<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+				</ul>
+				<section class="top-bar-section">
+					<ul class="left">
+						<li><a href="about.html">About Me</li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="https://github.com/Zulrak">GitHub</a></li>
+						<li><a href="contacts.html">Contacts Me</a></li>
+						<li><a href="contact_info.php">Business Contacts</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+		<!-- Title for the page -->
+		<div class="row">
+			<div class="large-2 columns center-title ">
+				<img src="img/logo.png"/>
+			</div>
+			<div class="large-10 columns center-title ">
+				<h1>Welcome to my Portfolio </h1>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="large-12 columns" id="content">
+				<p> As a soon to be Computer Programmer Analyst I have many talents at my disposal to work in a variety of different environments.
+				    I believe that whether we like it or not, technology is the future. For the most part technology makes our lives easier and it
+				    is because of this that I chose to work in the IT field. Whether it’s upgrading and updating out of date programs, building games,
+					making advertisements, to making web pages or managing databases I intend to use my skills as a programmer to make the lives of my
+				    users better. </p>
+			</div>
+		</div>
+		<!-- Slider, uses orbit from foundation -->
+		<div class="orbit-container" align="center">
+			<ul class="example-orbit" data-orbit>
+				<li> <a href="projects.html#flash-project"><img src="img/flash-project.jpg"/></a> </li>
+				<li> <a href="projects.html#pygame-project"><img src="img/pygame-project.jpg"/></a> </li>
+				<li> <a href="projects.html#web-project"><img src="img/web-project.jpg"/></a> </li>
+			</ul>
+		</div>
+		
+		<!-- Keep connected, and call to action button, in the same column for visual effect -->
+		<div class="row" align="Center" > 
+			<div class="large-6 columns">
+				<h5> Keep Connected </h5>
+				<a href="http://ca.linkedin.com/pub/jordan-cooper/7a/847/491"> <img src="img/linkedin.png" border="0"> </a> 
+			</div>
+			<div class="large-6 columns">
+				<a href="projects.html" class="small round button">Check out my work!</a>
+			</div>
+			
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<p> © 2014 Jordan Cooper</p>
+		</footer>
+		<script src="js/jquery.js"></script> 
+		<script src="js/foundation.min.js"></script> 
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.topbar.js"></script> 
+		<script src="js/foundation/foundation.orbit.js"></script> 
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+</html>
